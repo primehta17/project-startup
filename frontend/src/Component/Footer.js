@@ -1,14 +1,8 @@
 import React from 'react';
 import './Footer.css';
-// import records from './records.json';
+ import records from './records.json';
 
 function Footer() {
-  const records=[
-    {"id":1,"title":"About","content":"Our Story","faq":"Careers","center":"Our Team","our":"Resources"},
-    {"id":2,"title":"Support","content":"FAQ","faq":"Contact Us","center":"Help Center","our":"Terms of Service"},
-    {"id":3,"title":"Find Us","content":"FAQ","faq":"Locations","center":"Newsletter"},
-    {"id":4,"title":"Our Social","content":"📲 Instagram","faq":"🍃 Facebook","center":"Ⓧ Twitter"}
-]
   return (
     <>
       <div className="container">
