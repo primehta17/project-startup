@@ -1,16 +1,16 @@
 import './Choose.css';
 function Choose(){
     const chooserecord=[
-        {"id":1,"title":"Expert Guidance","icon":"📍",
+        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         },
-        {"id":1,"title":"Expert Guidance","icon":"📍",
+        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         },
-        {"id":1,"title":"Expert Guidance","icon":"📍",
+        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         },
-        {"id":1,"title":"Expert Guidance","icon":"📍",
+        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         }
     ]
