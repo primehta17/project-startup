@@ -1,5 +1,19 @@
 import './Choose.css';
 function Choose(){
+    const chooserecord=[
+        {"id":1,"title":"Expert Guidance","icon":"📍",
+            "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
+        },
+        {"id":1,"title":"Expert Guidance","icon":"📍",
+            "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
+        },
+        {"id":1,"title":"Expert Guidance","icon":"📍",
+            "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
+        },
+        {"id":1,"title":"Expert Guidance","icon":"📍",
+            "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
+        }
+    ]
     return(
         <>
           <div className="container mt-5">
@@ -8,38 +22,15 @@ function Choose(){
                 <br />
                 <p className="center">Elevating Your Home Buying with Experience, Intergrity,</p>
                 <p className="center">and Unmatched Personalized Service</p>
-                <div className="col-md-2 choosecard">
-                    <p><icon>📍</icon></p>
-                    <h5>Expert Guidance</h5>
-                    <p>
-                        Benefit from our team's seasoned expertise for 
-                        a smooth buying experience
-                    </p>
-                </div>
-                <div className="col-md-2 choosecard">
-                    <p><icon>📍</icon></p>
-                    <h5>Expert Guidance</h5>
-                    <p>
-                        Benefit from our team's seasoned expertise for 
-                        a smooth buying experience
-                    </p>
-                </div>
-                <div className="col-md-2 choosecard">
-                    <p><icon>📍</icon></p>
-                    <h5>Expert Guidance</h5>
-                    <p>
-                        Benefit from our team's seasoned expertise for 
-                        a smooth buying experience
-                    </p>
-                </div>
-                <div className="col-md-2 choosecard">
-                    <p><icon>📍</icon></p>
-                    <h5>Expert Guidance</h5>
-                    <p>
-                        Benefit from our team's seasoned expertise for 
-                        a smooth buying experience
-                    </p>
-                </div>
+               {chooserecord.map((record)=>{
+                return(
+                    <div className="col-md-2 choosecard">
+                        <p><icon>{record.icon}</icon></p>
+                        <h5>{record.title}</h5>
+                        <p>{record.content}</p>
+                    </div>
+                )
+               })}
               </div>
           </div>
         </>
