@@ -9,12 +9,10 @@ import About from '../Pages/About';
 import Question from '../Pages/Question';
 import Footer from './Footer';
 
-
 function Home() {
   return (
     <>
     <div className="container">
-
         <Navigation />
         <Find />
         <Search />
