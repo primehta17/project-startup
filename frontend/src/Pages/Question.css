@@ -2,6 +2,10 @@
     padding:100px;
 }
 .questioninput{
-    padding:13px;
+    width:35%;
+    border-radius: 5px;
+    margin-right:8px;
     background-color: bisque;
+    border:0px;
+    padding:12px;
 }
