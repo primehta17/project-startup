@@ -6,6 +6,10 @@ import Pricing from '../Pages/Pricing';
 import Features from '../Pages/Features';
 import Search from '../Pages/Search';
 import About from '../Pages/About';
+import Question from '../Pages/Question';
+import Footer from './Footer';
+
+
 function Home() {
   return (
     <>
@@ -18,6 +22,8 @@ function Home() {
         <Choose />
         <Pricing />
         <About />
+        <Question />
+        <Footer />
     </div>
     </>
   );
