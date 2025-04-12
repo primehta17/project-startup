@@ -5,6 +5,7 @@ import Choose from '../Pages/Choose';
 import Pricing from '../Pages/Pricing';
 import Features from '../Pages/Features';
 import Search from '../Pages/Search';
+import About from '../Pages/About';
 function Home() {
   return (
     <>
@@ -16,6 +17,7 @@ function Home() {
         <Features />
         <Choose />
         <Pricing />
+        <About />
     </div>
     </>
   );

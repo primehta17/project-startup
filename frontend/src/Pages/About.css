@@ -1,0 +1,30 @@
+.about{
+    background-color: rgb(131, 131, 85);
+    padding-top:27px;
+}
+.aboutcard{
+    background-color: antiquewhite;
+    border-radius: 20px;
+
+}
+.aboutcardimg{
+    width:100%;
+    border-radius: 20px 20px 0 0;
+}
+.aboutprofile{
+    margin:20px;
+    width:60px;
+    border-radius: 50%;
+}
+.profilestar{
+    background-color: pink;
+    margin:10px;
+    padding:5px;
+}
+.aboutpara{
+    padding:20px;
+}
+.name{
+    margin:0px;
+    padding:0px;
+}
