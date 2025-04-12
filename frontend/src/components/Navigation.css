@@ -1,0 +1,6 @@
+ul{
+    display:flex;
+    justify-content: space-around;
+    list-style-type: none;
+    padding-bottom:80px;
+}

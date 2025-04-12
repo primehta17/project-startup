@@ -1,0 +1,17 @@
+.choosecard{
+   background-color: rgb(157, 132, 123);
+   border-radius: 20px;
+   width: 300px;
+   margin: 12px;
+   padding:20px;
+}
+
+@media (max-width: 600px) and (min-width: 300px){
+    .choosecard{
+        background-color: rgb(157, 132, 123);
+        border-radius: 20px;
+        width: 100%;
+        padding: 20px;
+        margin: 2px;
+     }
+}
