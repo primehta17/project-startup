@@ -5,10 +5,10 @@ function Pricing() {
     {"id":1,"content":"📍 San Francisco, California","room1":"🛌 4 rooms",
       "room2":"📼 3,500 sq ft","rupees":"$ 2,500,000"
     },
-    {"id":1,"content":"📍 San Francisco, California","room1":"🛌 4 rooms",
+    {"id":2,"content":"📍 San Francisco, California","room1":"🛌 4 rooms",
       "room2":"📼 3,500 sq ft","rupees":"$ 2,500,000"
     },
-    {"id":1,"content":"📍 San Francisco, California","room1":"🛌 4 rooms",
+    {"id":3,"content":"📍 San Francisco, California","room1":"🛌 4 rooms",
       "room2":"📼 3,500 sq ft","rupees":"$ 2,500,000"
     },
   ]
@@ -19,7 +19,7 @@ function Pricing() {
       <div className="row">
         {pricingrecord.map((record)=>{
           return(
-            <div className="col-md-4 col-sm-4 pricecard">
+            <div className="col-md-4 col-sm-4 pricecard" key={record.id}>
             <img src="./six.jpg" />
               <div className="pricebottom">
                 <p>{record.content}</p>
@@ -29,23 +29,6 @@ function Pricing() {
             </div>
           )
         })}
-       
-        {/* <div className="col-md-4 col-sm-4 pricecard">
-          <img src="./six.jpg" />
-            <div className="pricebottom">
-              <p>📍 San Francisco, California</p>
-              <p>🛌 4 rooms     📼 3,500 sq ft</p>
-              <button className="signup">Sign up </button><span> $ 2,500,000</span>
-            </div>
-        </div>
-        <div className="col-md-4 col-sm-4 pricecard">
-          <img src="./six.jpg" />
-            <div className="pricebottom">
-              <p>📍 San Francisco, California</p>
-              <p>🛌 4 rooms     📼 3,500 sq ft</p>
-              <button className="signup">Sign up </button><span> $ 2,500,000</span>
-            </div>
-        </div> */}
       </div>
     </div>
     </>

@@ -5,11 +5,11 @@ function About(){
             "image1":"one.jpg","image2":"two.jpg","title1":"Sarah Ngugen",
             "title2":"San Francisco","star":"⭐️ 5.0"
         },
-        {"id":1,"content":" Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution. It became a W3C recommended standard in June 2012, and is a cornerstone technology of responsive web design",
+        {"id":2,"content":" Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution. It became a W3C recommended standard in June 2012, and is a cornerstone technology of responsive web design",
             "image1":"one.jpg","image2":"two.jpg","title1":"Sarah Ngugen",
             "title2":"San Francisco","star":"⭐️ 5.0"
         },
-        {"id":1,"content":" Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution. It became a W3C recommended standard in June 2012, and is a cornerstone technology of responsive web design",
+        {"id":3,"content":" Media queries is a feature of CSS 3 allowing content rendering to adapt to different conditions such as screen resolution. It became a W3C recommended standard in June 2012, and is a cornerstone technology of responsive web design",
             "image1":"one.jpg","image2":"two.jpg","title1":"Sarah Ngugen",
             "title2":"San Francisco","star":"⭐️ 5.0"
         }
@@ -22,7 +22,7 @@ function About(){
             <h3 className="center">About Dwello</h3>
             {aboutrecords.map((record)=>{
                  return(
-                   <div className="col-md-4">
+                   <div className="col-md-4" key={record.id}>
                 <div className="aboutcard">
                     <img className="aboutcardimg" src={record.image1} />
                     <div className="row">

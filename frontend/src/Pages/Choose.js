@@ -4,13 +4,13 @@ function Choose(){
         {"id":1,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         },
-        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
+        {"id":2,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         },
-        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
+        {"id":3,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         },
-        {"id":1,"title":"Expert Guidance","icon":" 📍 ",
+        {"id":4,"title":"Expert Guidance","icon":" 📍 ",
             "content":" Benefit from our team's seasoned expertise for a smooth buying experience"
         }
     ]
@@ -24,8 +24,8 @@ function Choose(){
                 <p className="center">and Unmatched Personalized Service</p>
                {chooserecord.map((record)=>{
                 return(
-                    <div className="col-md-2 choosecard">
-                        <p><icon>{record.icon}</icon></p>
+                    <div className="col-md-2 choosecard"  key={record.id}>
+                        <p>{record.icon}</p>
                         <h5>{record.title}</h5>
                         <p>{record.content}</p>
                     </div>

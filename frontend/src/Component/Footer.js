@@ -13,7 +13,7 @@ function Footer() {
           </div>
           {records.map((record)=>{
             return(<>
-             <div className="col-md-2" key={record.id}>
+            <div className="col-md-2" key={record.id}>
             <h5>{record.title}</h5>
             <p>{record.content}</p>
             <p>{record.faq}</p>
