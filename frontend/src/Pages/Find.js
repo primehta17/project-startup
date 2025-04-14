@@ -1,9 +1,10 @@
 import './Find.css';
+import Search from './Search';
 
 function Find() {
   return (
     <>
-      <div className="container">
+      <div className="container findcontainer">
         <div className="row">
         <div className="col-md-4 col-sm-6">
             <h2>Find Your </h2>
@@ -19,6 +20,7 @@ function Find() {
             <img className ="sectiontwoimg" src="./three.avif"></img>
           </div>
         </div>
+        <Search />
         </div>
       </div>
     </>
