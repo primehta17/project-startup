@@ -12,7 +12,7 @@ function Footer() {
           <p>Bringing you closer to your gream home, one click at a time.</p>
           </div>
           {records.map((record)=>{
-            return(<>
+            return(
             <div className="col-md-2" key={record.id}>
             <h5>{record.title}</h5>
             <p>{record.content}</p>
@@ -20,7 +20,7 @@ function Footer() {
             <p>{record.center}</p>
             <p>{record.our}</p>
           </div>
-          </>)
+          )
              })}
         </div>
       </div>
