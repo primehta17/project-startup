@@ -1,18 +1,40 @@
 import {useState} from 'react';
+import User from './User'
 import './Search.css';
-function Search(){
+function Search(){ 
+    const [users,setUsers] = useState([]);
     const [location,setLocation] =useState('');
     const [email,setEmail] = useState('');
     const [number,setNumber] =useState('');
-    const [confirm,setConfirm] =useState('')
+    const [confirm,setConfirm] =useState('');
+    const [error, setError] =useState('');
     const submitHandler = (e) =>{
         e.preventDefault();
-        console.log(location,email,number,confirm)
+
+        if(number.length<10){
+            setError('Number must be 10 characters long');
+            return;
+        }
+        if(number!=confirm){
+            setError('Number and confirm Number should be same');
+            return;
+        }
+        if(!/[@#~#$%^&*(){<>?]/.test(location)){
+            setError("Location should contain any special character");
+            return;
+        }
+        if(!/[A-Z]/.test(location)){
+            setError("Location should contain capital letter too");
+            return;
+        }
+       setUsers([...users,{location,email,number}])
         setLocation('')
         setEmail('')
         setNumber('')
         setConfirm('')
-        console.log("form submit")
+        setError('')
+        console.log(location,email,number,confirm)
+        alert("form submit")
    }
     return(
         <>
@@ -33,9 +55,16 @@ function Search(){
                 <div className="col-md-2">
                     <input className="inputs" type="number" placeholder="Confirm Range" value={confirm} onChange={(e)=>setConfirm(e.target.value)} required/>
                 </div>
+                {error && (
+                        <p className="text-danger"> {error}</p>
+                    )}
+                    
                 <div className="col-md-3">
                     <button className="signup" type="submit">Sign up</button>
                 </div>  
+                {users.map((elem,index)=>{
+                    return <User  key={index} elem={elem} />
+                    })}
             </div>
             </form>
         </div>
