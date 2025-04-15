@@ -60,18 +60,21 @@ const {name,value} =e.target;
 
   return (
     <>
-    <div className="container m-5">
+    <div className="container containerreg m-5 bg-info">
       <div className="row">
+        <div className="col-md-3"></div>
+        <div className="col-md-6">
       <h2>Register</h2>
       <form onSubmit={(e)=>{submitHandler(e)}}>
-        <label htmlFor="fullName">Full Name</label>
+       <p><label htmlFor="fullName">Full Name</label></p> 
         <input type="text" className="inputs" value={formData.fullname} name="fullname"
         onChange={handleChange} />
-        <label htmlFor="email">Email</label>
+        <p> <label htmlFor="email">Email</label></p>
+       
         <input type="email" className="inputs" name="email" value={formData.email} onChange={handleChange}/>
-        <label htmlFor="password">Password</label>
+       <p><label htmlFor="password">Password</label></p> 
         <input type="password" className="inputs" name="password" value={formData.password} onChange={handleChange} />
-        <label htmlFor="confirmPassword">Confirm Password</label>
+       <p><label htmlFor="confirmPassword">Confirm Password</label></p> 
         <input type="password" className="inputs" name="confirmPassword" value={formData.confirmPassword} 
         onChange={handleChange} />
         {error && <p className="text-danger">{error}</p>}
@@ -80,6 +83,8 @@ const {name,value} =e.target;
       {register.map((elem,index)=>{
                     return  <div key={index}>{elem.fullname}</div> 
             })}
+</div>
+<div className="col-md-3"></div>
       </div>  
     </div>
     </>
