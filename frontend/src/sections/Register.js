@@ -60,7 +60,7 @@ const {name,value} =e.target;
 
   return (
     <>
-    <div className="container containerreg m-5 bg-info">
+    <div className="container containerreg m-5 bg-info" id="register">
       <div className="row">
         {/* <div className="col-md-3"></div>
         <div className="col-md-6"> */}

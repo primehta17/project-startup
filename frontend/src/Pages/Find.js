@@ -4,14 +4,14 @@ import Search from './Search';
 function Find() {
   return (
     <>
-      <div className="container findcontainer">
+      <div className="container findcontainer" id="mara">
         <div className="row">
         <div className="col-md-4 col-sm-6">
             <h2>Maasai Mara </h2>
-            <h2> As The Mara</h2>
+            <h2>As The Mara</h2>
             <p>Is a large national game reserve in Narok</p>
             <p>County, Kenya, contiguous with the Serengeti</p>
-            <p> National Park in Tanzania.</p>
+            <p>National Park in Tanzania.</p>
             <br />
             <button className="signup">Sign up</button>
         </div>
