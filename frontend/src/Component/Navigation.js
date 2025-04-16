@@ -5,13 +5,13 @@ function Navigation(){
       <>
       <div className="navigation">
          <ul>
-          <li>Dwello</li>
-          <li>Home</li>
-          <li>Service</li>
-          <li>Agents</li>
-          <li>Contact</li>
-          <li>🔎</li>
-          <li>🙎🏻‍♂️</li>
+          <li><a href="#">Dwello</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#service">Service</a></li>
+          <li><a href="#agents">Agents</a></li>
+          <li><a href ="#contact">Contact</a></li>
+          <li><a href="#find">🔎</a></li>
+          <li><a href="#price">🙎🏻‍♂️</a></li>
           <button className="signup"> Sign up</button>
          </ul>
       </div>

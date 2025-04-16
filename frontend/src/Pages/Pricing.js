@@ -14,7 +14,7 @@ function Pricing() {
   ]
   return (
     <>
-    <div className="container mt-5">
+    <div className="container mt-5" id="price">
       <h2 className="center">Our Popular Residency</h2>
       <div className="row">
         {pricingrecord.map((record)=>{

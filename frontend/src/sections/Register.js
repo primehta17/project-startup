@@ -62,30 +62,30 @@ const {name,value} =e.target;
     <>
     <div className="container containerreg m-5 bg-info">
       <div className="row">
-        <div className="col-md-3"></div>
-        <div className="col-md-6">
+        {/* <div className="col-md-3"></div>
+        <div className="col-md-6"> */}
       <h2>Register</h2>
       <form onSubmit={(e)=>{submitHandler(e)}}>
        <p><label htmlFor="fullName">Full Name</label></p> 
         <input type="text" className="inputs" value={formData.fullname} name="fullname"
-        onChange={handleChange} />
+        onChange={handleChange} required />
         <p> <label htmlFor="email">Email</label></p>
        
-        <input type="email" className="inputs" name="email" value={formData.email} onChange={handleChange}/>
+        <input type="email" className="inputs" name="email" value={formData.email} onChange={handleChange} required/>
        <p><label htmlFor="password">Password</label></p> 
-        <input type="password" className="inputs" name="password" value={formData.password} onChange={handleChange} />
+        <input type="password" className="inputs" name="password" value={formData.password} onChange={handleChange} required/>
        <p><label htmlFor="confirmPassword">Confirm Password</label></p> 
         <input type="password" className="inputs" name="confirmPassword" value={formData.confirmPassword} 
-        onChange={handleChange} />
+        onChange={handleChange} required/>
         {error && <p className="text-danger">{error}</p>}
         <button type="submit" >Submit</button>
       </form>
       {register.map((elem,index)=>{
                     return  <div key={index}>{elem.fullname}</div> 
             })}
-</div>
-<div className="col-md-3"></div>
-      </div>  
+    </div>
+    {/* <div className="col-md-3"></div>
+      </div>    */}
     </div>
     </>
   );
